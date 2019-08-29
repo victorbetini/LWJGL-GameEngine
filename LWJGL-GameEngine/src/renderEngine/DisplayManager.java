@@ -24,6 +24,7 @@ public class DisplayManager {
 			Display.setDisplayMode(new DisplayMode(W, H));
 			Display.create(new PixelFormat(), attribs);
 			Display.setTitle("LWJGL - Game");
+			Display.setResizable(true);
 		} catch (LWJGLException e) {
 			e.printStackTrace();
 		}
