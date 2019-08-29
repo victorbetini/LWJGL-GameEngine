@@ -12,7 +12,7 @@ public class Renderer {
 		GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
 	}
 	
-	//RENDERIZADOR DE MODELS
+	//RENDERIZADOR DE MODELS.
 	public void render(RawModel model) {
 		GL30.glBindVertexArray(model.getVaoID());
 		GL20.glEnableVertexAttribArray(0);

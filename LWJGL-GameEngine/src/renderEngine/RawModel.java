@@ -3,7 +3,7 @@ package renderEngine;
 //CLASSE QUE REPRESENTA O MODELO 3D ARMAZENADO EM MEMÓRIA
 public class RawModel {
 
-	//PEGA O ID DO VAO E O NUMERO DE VERTICES
+	//PEGA O ID DO VAO E O NUMERO DE VERTICES 
 	private int vaoID;
 	private int vertexCount;
 	
