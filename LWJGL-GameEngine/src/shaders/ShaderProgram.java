@@ -7,8 +7,10 @@ import java.io.IOException;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL20;
 
+//ABSTRACT PORQUE VAI SER USADA POR TODOS OS SHADERS
 public abstract class ShaderProgram {
 	
+	//IDs
 	private int programID;
 	private int vertexShaderID;
 	private int fragmentShaderID;
@@ -47,6 +49,7 @@ public abstract class ShaderProgram {
 		GL20.glBindAttribLocation(programID, attribute, variableName);
 	}
 
+	//LOAD SHADER
 	private static int loadShader(String file, int type) {
 		StringBuilder shaderSource = new StringBuilder();
         try{

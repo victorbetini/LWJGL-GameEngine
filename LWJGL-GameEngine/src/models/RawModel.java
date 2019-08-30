@@ -1,4 +1,4 @@
-package renderEngine;
+package models;
 
 //CLASSE QUE REPRESENTA O MODELO 3D ARMAZENADO EM MEMÓRIA
 public class RawModel {
