@@ -36,6 +36,7 @@ public class Loader {
 		return new RawModel(vaoID, indices.length);
 	}
 	
+	//Carrga a textura
 	public int loadTexture(String fileName) {
 		Texture texture = null;
 		try {
