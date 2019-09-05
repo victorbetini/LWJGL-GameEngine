@@ -27,18 +27,21 @@ public class MainGameLoop {
 		StaticShader shader = new StaticShader();
 		Renderer renderer = new Renderer(shader);
 
-		RawModel model = OBJLoader.loadObjModel("camp", loader);
+		RawModel model = OBJLoader.loadObjModel("dragon", loader);
 		
-		TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("camp")));
+		TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("tree")));
+		ModelTexture texture = staticModel.getTexture();
+		texture.setShineDamper(10);
+		texture.setReflectivity(1);
 		
-		Entity entity = new Entity(staticModel, new Vector3f(0, -1, -10), 0, 0, 0, 1);
-		Light light = new Light(new Vector3f(0,0,-5), new Vector3f(1,1,1));
+		Entity entity = new Entity(staticModel, new Vector3f(0, -5, -10), 0, 0, 0, 1);
+		Light light = new Light(new Vector3f(0,0,-7), new Vector3f(1,1,1));
 		
 		Camera camera = new Camera();
 		
 		//LOOP
 		while(!Display.isCloseRequested()) {
-			entity.increaseRotation(0, 0.01f, 0);
+			entity.increaseRotation(0, 0.1f, 0);
 			camera.move();
 			renderer.prepare();
 			shader.start();
