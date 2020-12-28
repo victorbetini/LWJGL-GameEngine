@@ -12,7 +12,7 @@ public class DisplayManager {
 	//LARGURA, ALTURA, FPS
 	private static final int W = 1280;
 	private static final int H = 720;
-	private static final int FPS = 720;
+	private static final int FPS = 120;
 	
 	public static void createDisplay() {
 		

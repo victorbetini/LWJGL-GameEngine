@@ -1,7 +1,7 @@
-//Versão do glsl
+//Versï¿½o do glsl
 #version 400 core
 
-//INPUT (3D VECTOR) posição do vertice (ta no vao)
+//INPUT (3D VECTOR) posiï¿½ï¿½o do vertice (vao)
 
 in vec3 position;
 in vec2 textureCoords;
