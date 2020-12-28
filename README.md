@@ -1,5 +1,5 @@
 # LWJGL-GameEngine
----
+
 ## Criando uma GameEngine em Java
 
 ##### Para este projeto estou utilizando a biblioteca <a href="https://www.lwjgl.org/" target="blank">LWJGL</a>, tudo graças ao [ThinMatrix](https://github.com/TheThinMatrix) que criou uma [PlayList](https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP) ensinando tudo sobre como criar a game engine do zero.
